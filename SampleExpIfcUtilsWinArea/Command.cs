@@ -16,7 +16,7 @@ namespace SampleExpIfcUtilsWinArea
   [Transaction( TransactionMode.ReadOnly )]
   public class Command : IExternalCommand
   {
-    const double _square_feet_to_square_metres 
+    const double _square_feet_to_square_metres
       = 0.09290304;
 
     /// <summary>
@@ -46,10 +46,10 @@ namespace SampleExpIfcUtilsWinArea
           // using I = Autodesk.Revit.DB.IFC;
 
           CurveLoop curveLoop = I.ExporterIFCUtils
-            .GetInstanceCutoutFromWall( doc, wall, 
+            .GetInstanceCutoutFromWall( doc, wall,
               familyInstance, out basisY );
 
-          IList<CurveLoop> loops 
+          IList<CurveLoop> loops
             = new List<CurveLoop>( 1 );
 
           loops.Add( curveLoop );
@@ -60,13 +60,13 @@ namespace SampleExpIfcUtilsWinArea
       }
       else
       {
-        double width 
-          = familyInstance.Symbol.get_Parameter( 
+        double width
+          = familyInstance.Symbol.get_Parameter(
             BuiltInParameter.FAMILY_WIDTH_PARAM )
               .AsDouble();
 
-        double height 
-          = familyInstance.Symbol.get_Parameter( 
+        double height
+          = familyInstance.Symbol.get_Parameter(
             BuiltInParameter.FAMILY_HEIGHT_PARAM )
               .AsDouble();
 
@@ -94,7 +94,7 @@ namespace SampleExpIfcUtilsWinArea
 
       foreach( ElementId elementId in elementIds )
       {
-        FamilyInstance fi = doc.GetElement( elementId ) 
+        FamilyInstance fi = doc.GetElement( elementId )
           as FamilyInstance;
 
         if( null != fi )
@@ -112,20 +112,20 @@ namespace SampleExpIfcUtilsWinArea
         }
       }
       int count = elementIds.Count<ElementId>();
-      
+
       double areaPrintFriendly = Math.Round( areaTotal, 2 );
 
-      sb.AppendLine( "\nTotal area: " 
+      sb.AppendLine( "\nTotal area: "
         + areaPrintFriendly + " m2" );
 
-      TaskDialog taskDialog = new TaskDialog( 
+      TaskDialog taskDialog = new TaskDialog(
         "Selection Area" );
 
-      taskDialog.MainInstruction = "Elements selected: " 
+      taskDialog.MainInstruction = "Elements selected: "
         + count;
 
       taskDialog.MainContent = sb.ToString();
-      
+
       taskDialog.Show();
 
       return Result.Succeeded;
