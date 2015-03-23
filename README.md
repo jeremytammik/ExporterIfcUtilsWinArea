@@ -3,7 +3,8 @@ Revit add-in using ExporterIfcUtils to determine window area.
 
 For a detailed desciption, please refer to the original Revit API discussion thread on
 [Door/Window Areas](http://forums.autodesk.com/t5/revit-api/door-window-areas/td-p/5535565) and
-[The Building Coder](http://thebuildingcoder.typepad.com).
+[The Building Coder](http://thebuildingcoder.typepad.com) discussion on
+[IFCExportUtils determine door and window area](http://thebuildingcoder.typepad.com/blog/2015/03/ifcexportutils-methods-determine-door-and-window-area.html).
 
 
 ## Authors
