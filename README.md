@@ -8,7 +8,7 @@ For a detailed desciption, please refer to the original Revit API discussion thr
 
 ## Authors
 
-Peter ([pjohan13](http://forums.autodesk.com/t5/user/viewprofilepage/user-id/2663907) and
+Peter ([pjohan13](http://forums.autodesk.com/t5/user/viewprofilepage/user-id/2663907)) and
 Jeremy Tammik, [The Building Coder](http://thebuildingcoder.typepad.com), Autodesk Inc.
 
 
