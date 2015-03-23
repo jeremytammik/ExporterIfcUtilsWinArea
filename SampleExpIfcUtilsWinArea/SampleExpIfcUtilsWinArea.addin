@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command SampleExpIfcUtilsWinArea</Text>
+    <Description>Some description for SampleExpIfcUtilsWinArea</Description>
+    <Assembly>SampleExpIfcUtilsWinArea.dll</Assembly>
+    <FullClassName>SampleExpIfcUtilsWinArea.Command</FullClassName>
+    <ClientId>57a049de-c781-457e-8d33-7c54a68275a1</ClientId>
+    <VendorId>PLJ</VendorId>
+    <VendorDescription>-</VendorDescription>
+  </AddIn>
+</RevitAddIns>
