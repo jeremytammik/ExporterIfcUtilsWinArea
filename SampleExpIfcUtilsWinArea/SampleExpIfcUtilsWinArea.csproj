@@ -54,7 +54,6 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Command.cs" />
@@ -69,7 +68,7 @@
     <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2015\SampleExpIfcUtilsWinArea.dll" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>copy "$(ProjectDir)SampleExpIfcUtilsWinArea.addin" "$(AppData)\Autodesk\REVIT\Addins\2015"
+copy "$(ProjectDir)bin\debug\SampleExpIfcUtilsWinArea.dll" "$(AppData)\Autodesk\REVIT\Addins\2015"</PostBuildEvent>
   </PropertyGroup>
 </Project>
