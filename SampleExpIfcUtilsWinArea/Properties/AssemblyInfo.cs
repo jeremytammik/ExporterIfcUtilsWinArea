@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Autodesk Inc.")]
 [assembly: AssemblyProduct( "ExporterIfcUtilsWinArea" )]
-[assembly: AssemblyCopyright("Copyright 2015 © Peter (Pjohan13) and Jeremy Tammik, Autodesk Inc.")]
+[assembly: AssemblyCopyright("Copyright (C) 2015-2023 Peter (Pjohan13) and Jeremy Tammik, Autodesk Inc.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2015.0.0.0")]
-[assembly: AssemblyFileVersion("2015.0.0.0")]
+[assembly: AssemblyVersion("2024.0.0.0")]
+[assembly: AssemblyFileVersion("2024.0.0.0")]

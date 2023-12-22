@@ -106,7 +106,7 @@ namespace SampleExpIfcUtilsWinArea
           double areaRound = Math.Round( areaMetric, 2 );
 
           sb.AppendLine();
-          sb.Append( "ElementId: " + fi.Id.IntegerValue );
+          sb.Append( "ElementId: " + fi.Id.Value );
           sb.Append( "  Name: " + fi.Name );
           sb.AppendLine( "  Area: " + areaRound + " m2" );
         }
